@@ -12,13 +12,16 @@ the app. Everything runs on the Mac's own GPU. Nothing is uploaded anywhere.
 
 ## Requirements
 
-- macOS with the Upscayl app installed at `/Applications/Upscayl.app`
-  (Apple Silicon and Intel are both supported, the binary is universal).
-- Not installed? Tell the user, then install it for them with
-  `brew install --cask upscayl`, or point them to https://upscayl.org
-  (download the Mac version, drag it into Applications).
-- This skill only works on the Mac itself. In a cloud or Linux session there is
-  no GPU and no app, so say that the job has to run in Claude Code on the Mac.
+- The Upscayl app installed on this machine, normally at `/Applications/Upscayl.app`
+  (Apple Silicon and Intel are both supported, the binary is universal). A
+  differently placed engine can be pointed at with `UPSCAYL_BIN`.
+- The engine needs a GPU (Metal on a Mac, Vulkan elsewhere). Cloud and container
+  sessions normally have neither the app nor a GPU.
+- Never decide from the environment alone whether it can work: run `--check`
+  first and trust its answer. If it passes, proceed here. If it reports that the
+  app is missing, tell the user the job has to run in Claude Code on the Mac and
+  offer to install the app there (`brew install --cask upscayl`, or download it
+  from https://upscayl.org and drag it into Applications).
 
 ## The script
 

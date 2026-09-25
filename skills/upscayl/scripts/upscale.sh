@@ -389,7 +389,9 @@ run_one() {
   local started
   started="$(date +%s)"
   if [[ $VERBOSE -eq 1 ]]; then
-    "$BIN" "${args[@]}" 2> >(tee "$logf" >&2) || rc=$?
+    # The engine reports on stderr. Pipe it through tee so the user sees progress
+    # and the log is complete before it is inspected (pipefail keeps the engine's exit code).
+    { "$BIN" "${args[@]}" 2>&1 >/dev/null; } | tee "$logf" >&2 || rc=$?
   else
     "$BIN" "${args[@]}" >/dev/null 2>"$logf" || rc=$?
   fi
