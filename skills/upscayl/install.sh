@@ -3,8 +3,8 @@
 #
 # Run it in one of two ways:
 #   1. From a checkout of the repository:   bash skills/upscayl/install.sh
-#   2. Standalone, without cloning anything:
-#      curl -fsSL https://raw.githubusercontent.com/yogevush/convimax-privacy/main/skills/upscayl/install.sh | bash
+#   2. Standalone, without cloning anything (use "main" instead of the branch once merged):
+#      curl -fsSL https://raw.githubusercontent.com/yogevush/convimax-privacy/claude/brave-gates-87f3c3/skills/upscayl/install.sh | bash
 #
 # Add --with-app to also install the Upscayl app through Homebrew when it is missing.
 #

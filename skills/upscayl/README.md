@@ -23,10 +23,14 @@ brew install --cask upscayl
 התקנת הסקיל, שורה אחת בטרמינל או בקלוד קוד במק:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/yogevush/convimax-privacy/main/skills/upscayl/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/yogevush/convimax-privacy/claude/brave-gates-87f3c3/skills/upscayl/install.sh | bash
 ```
 
-הפקודה מעתיקה את הסקיל לתיקיית הסקילים האישית של קלוד קוד ובודקת שהתוכנה מותקנת.
+הפקודה מעתיקה את הסקיל לתיקיית הסקילים האישית של קלוד קוד ובודקת שהתוכנה מותקנת. אחרי שהענף ימוזג לענף הראשי, אותה שורה עובדת גם עם
+
+main
+
+במקום שם הענף.
 
 ## מה יש כאן
 
