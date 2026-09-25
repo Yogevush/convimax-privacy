@@ -118,7 +118,8 @@ html = f"""<!doctype html>
   .photo {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }}
   .wall-haze {{ position: absolute; inset: 0;
     background:
-      linear-gradient(180deg, rgba(4,7,13,0.86) 0%, rgba(4,7,13,0.62) 30%, rgba(4,7,13,0.0) 52%),
+      radial-gradient(ellipse 46% 42% at 50% 22%, rgba(4,7,13,0.55), rgba(4,7,13,0) 70%),
+      linear-gradient(180deg, rgba(4,7,13,0.90) 0%, rgba(4,7,13,0.66) 28%, rgba(4,7,13,0.0) 50%),
       linear-gradient(180deg, rgba(0,0,0,0) 58%, rgba(0,0,0,0.60) 78%, rgba(0,0,0,0.94) 100%); }}
 
   /* --- vignette and grain --- */
